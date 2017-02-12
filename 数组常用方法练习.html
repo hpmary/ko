@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+//    * 内置对象:系统自带的Array Object Math Date
+//    *
+//    * 内置对象中的常用方法:
+//    * Array的方法
+//    *
+//    * 创建数组对象
+//    * 1.var arr=[];
+//    * 2.var arr=new Array();
+//    * 属性:length
+//    * 如何判断这个对象是不是数组:两种方式:
+//            * 1.instanceof 语法:   对象 instanceof 类型 返回一个布尔值
+//        var arr=[1,2,3,4,5];
+//        console.log(arr instanceof Array);
+//    * 这个对象是不是Array的实例
+//    * 2.isArray();方法: 判断对象是不是这种数据类型(判断这个对象是不是Array的一个实例)
+//       var arr =[1,2,3];
+//        var result =Array.isArray(arr);
+//        console.log(result)
+//    * toString();转字符串类型
+//      var arr = [1,2,3];
+//      var result =arr.toString();
+//       console.log(result)
+//    * join("分隔符"); 把数组中每个元素中间加一个符号,返回的是字符串
+//var names = ["卡卡西","醉蛛","黑崎一护","大蛇丸"];
+//      console.log(names.join("|"));
+//    * push(元素);追加元素,返回值是追加元素后数组的长度,操作的是原数组
+//var arr=["a1","a2","a3"];
+//var result =arr.push("love");
+//console.log(result);
+//console.log(arr);
+//    * pop();方法,删除数组中的最后一个元素,返回值就是这个删除的元素 ,操作原数组
+//var arr=["a1","a2","a3"];
+//var result =arr.pop();
+//console.log(result);
+//console.log(arr);
+//    * unshift();在数组第一个元素前面添加一个新的元素,返回值是添加元素后的数组的长度，操作的是原数组
+
+//var arr=["a1","a2","a3"];
+//var result =arr.unshift("love");
+//console.log(result);
+//console.log(arr);
+//    * shift();删除数组中第一个元素,返回值就是这个删除的元素值 操作的是原数组
+//var arr=["a1","a2","a3"];
+//var result =arr.shift();
+//console.log(result);
+//console.log(arr);
+//    * concat()合并数组的,可以一次性合并多个数组,里面的参数可以是字符串
+//    *
+
+//        reverse()反转数组，返回值是反转后的数组，操作的是原数组
+
+//    * slice(2,5);//从下标为2的位置开始截取,到下标为5的前一个结束（不包括end),截取数组中某一个部分 ,返回的是一个数组，操作的不是原数组
+//var arr=["a1","a2","a3"];
+//var result =arr.slice(0,1);
+//console.log(result);
+//console.log(arr);
+//    * splice(2,5);从下标为2的位置开始删除,删除5个元素,如果只有一个参数，从下标为2的位置开始删除到最后，就是操作的是原数组
+//var arr=["a1","a2","a3"];
+//var result =arr.splice(1,1);
+//console.log(result);
+//console.log(arr);
+//    * indexOf()方法,第一个参数是要找的元素,第二个参数可以写,也可以不用写,如果写了,从哪个位置开始找,找到则返回对应的索引,找不到则返回-1
+//var arr =[1,2,4,5,6,7,8];
+//var result = arr.indexOf(5);
+//console.log(result);
+//    * */
+//    var arr=[10,30,21,51,40,100];
+//    arr.forEach(function (item,index) {
+//        // console.log(index+","+item);
+//        if(item%2==0){
+//            console.log(item);
+//        }
+//    });
+
+    //        var arr=[1,2,3,4,5];
+    //        console.log(arr instanceof Array);
+//     var arr= [1,2,3];
+//console.log(arr instanceof Array);
+//var arr1 = {};
+//console.log(arr1 instanceof Object);
+//var arr3 = new Date();
+//console.log(arr3 instanceof Object)
+    //        var arr=[1,2,3,4,5];
+    //        var flag=Array.isArray(arr);
+    //        console.log(flag);
+//var arr  =[3,4,5];
+//var flag = Array.isArray(arr);
+//console.log(flag);
+//var most = ["a","b","c"];
+//var isT = Array.isArray(most);
+//console.log(isT);
+//var nu ={};
+//var isTrue =Array.isArray(nu);
+//console.log(isTrue);
+    //Ctrl+鼠标左键；该方法的返回值,参数,类型
+    //Array.isArray();
+
+    //        var arr=new Array();
+    //        console.log(Array.isArray(arr));
+//var arr = new Array();
+//console.log(Array.isArray(arr));
+//var arr = new Array();
+//console.log(Array.isArray(arr));
+
+    //        var arr=[10,20,30];
+    //        console.log(arr.toString());
+//var arr = [89,40,78,"q"];
+//console.log(arr.toString())
+//var nu = [1,2,3];
+//console.log(nu.toString());
+//var nu1 = [3,90,"ko"];
+//console.log(nu1.toString())
+    //        var names=["卡卡西","佐助","黑崎一护","大蛇丸"];
+    //        console.log(names.join("|"));
+    //
+//       var names = ["卡卡西","醉蛛","黑崎一护","大蛇丸"];
+//      console.log(names.join("|"));
+//var nu = ["a1","a2","a3"];
+//console.log(nu.join("/"));
+//var nu1 = [10,20,30];
+//console.log(nu1.join("+"))
+
+
+
+
+    //     var arr=[10,20,30,40];
+    //        var result=arr.shift();
+    //        console.log(result);
+    //        console.log(arr);
+
+//var arr = [10,20,30];
+//var re = arr.shift();
+//console.log(re);
+//console.log(arr);
+// var arr1 = ["a1","a2","a3"];
+//var result = arr1.shift();
+//console.log(result)
+//console.log(arr1);
+//var names = ["小","明","小","红"];
+//var rn = names.shift();
+//console.log(rn);
+//console.log(names);
+
+    //        var length=arr.unshift(10);
+    //        console.log(length);
+    //        console.log(arr);
+//var arr = [10,11,12];
+//var result = arr.unshift("a1");
+//console.log(result);
+//console.log(arr);
+//var names =["是","小狗"];
+//var add = names.unshift("jiadong");
+//console.log(add);
+//console.log(names);
+//var arr = ["是","大美女"];
+//var result = arr.unshift("某某");
+//console.log(result);
+//console.log(arr);
+
+    //        var result=arr.pop();
+    ////       var length=arr.push(100);
+    ////        console.log(length);
+    //        console.log(result);
+    //        console.log(arr);
+//var arr = [10,20,30];
+//var result = arr.pop();
+//console.log(result);
+//console.log(arr)
+//var arr =["jia","dong"];
+//var result = arr.pop();
+//console.log(result);
+//console.log(arr);
+//var names = ["逗","比"];
+//var result = names.pop();
+//console.log(result);
+//console.log(names);
+//var arr = [1,14,56];
+//var result = arr.push(1);
+//console.log(result);
+//console.log(arr);
+//var arr=["a1","a2","a3"];
+//var result =arr.push("love");
+//console.log(result);
+//console.log(arr);
+//var arr =["say"];
+//var result = arr.push("hello");
+//console.log(result);
+//console.log(arr);
+
+    //        var alpha = ["a", "b", "c"];
+    //        var numeric = [1, 2, 3];
+    //
+//var n1 =["web"];
+//var n2 = ["前端"];
+//var n3 =n1.concat(n1,["javascript"],"H5")
+//console.log(n3);
+//var n1 = [10];
+//var n2 =[20];
+//var n3 =n1.concat(n2);
+//console.log(n3);
+//var n1 =10;
+//var n2 =20;
+//var n3 =n1.concat(n2);
+//console.log(n3);
+    //
+    //        var alphaNumeric = alpha.concat(numeric,[10,20,30],[50,100]);
+    //        console.log(alphaNumeric);
+    //        console.log(alpha);
+
+
+    //        var arr=[10,5,3,20,100];
+    //        arr.sort();
+    //        console.log(arr);
+
+    //反转
+    //        arr.reverse();
+    //        console.log(arr);
+//var arr =[1,2,3,4];
+//var result = arr.reverse();
+//console.log(result);
+//console.log(arr);
+//var arr = [1,2,3];
+//var result = arr.reverse();
+//console.log(result);
+//console.log(arr);
+//var arr =[1,2,3];
+//var result = arr.reverse();
+//console.log(result);
+//console.log(arr);
+//var arr =[12,45,67];
+//var result =arr.sort(function (x,y) {
+//    return y-x;
+//});
+//console.log(result);
+//console.log(arr);
+//var arr =[1,23,2,4,90];
+//var result = arr.sort(function (x,y) {
+//    return y-x;
+//
+//})
+//console.log(result);
+//console.log(arr);
+//var arr =[12,90,0,80,-10];
+//var result = arr.sort(function (x,y) {
+//    return x-y;
+//
+//})
+//console.log(result);
+//console.log(arr);
+    //        var arr=[10,5,3,20,100];
+    //        arr.sort(function (x,y) {
+    //            return x-y;
+    //        });
+    //        console.log(arr);
+    //
+    //        var names=["jack","jay","jaky"];
+    //        names.sort(function (x,y) {
+    //            if(x>y){
+    //return 1;
+    //            }else if(x==y){
+    //return 0;
+    //            }else {
+    //               return -1;
+    //            }
+    //        });
+    //        console.log(names);
+//var arr =[10,30,56,90,34,23,45];
+//var result = arr.slice(3,5);
+//console.log(result);
+//console.log(arr);
+//var arr =[10,20,30,40,50,60];
+//var result = arr.slice(0,4);
+//console.log(result);
+//console.log(arr);
+//var arr = [10,20,30,50,70];
+//var result = arr.slice(2,4);
+//console.log(result);
+//console.log(arr);
+
+    //        var arr=[10,20,30,40,50,60,70];
+    //        var result=arr.splice(2,5);
+    //        console.log(result);//30,40,50,60,70
+    //        console.log(arr);//10,20
+    //        var result=arr.slice(2,5);//从下标为2的位置开始截取,到下标为5的前一个结束
+    //        console.log(result);
+    //        console.log(arr);
+
+//var arr =[10,20,30,40,50,60];
+//var result = arr.splice(4);
+//console.log(result);
+//console.log(arr);
+//var arr = [1,2,3,4,5,6,7,8];
+//var result = arr.splice(2,4);
+//console.log(result);
+//console.log(arr);
+//var arr=[1,2,3,4,5,6];
+//var result = arr.splice(3,2);
+//console.log(result);
+//console.log(arr);
+//            var arr=[10,20,30,40,20,50,60];
+//            var index=arr.indexOf(20,3);
+//            console.log(index);
+//var arr = [1,2,3,4,5,6,7,3,8,9];
+//var result = arr.indexOf(3,4);
+//console.log(result);
+//var arr = [1,2,0,4,5,6,0,7];
+//var result =arr.indexOf(0);
+//console.log(result);
+//var arr =[1,2,4,5,6,7,8];
+//var result = arr.indexOf(5);
+//console.log(result);
+    // Production steps of ECMA-262, Edition 5, 15.4.4.18
+    // Reference: http://es5.github.io/#x15.4.4.18
+//    if (!Array.prototype.forEach) {
+//
+//        Array.prototype.forEach = function(callback, thisArg) {
+//
+//            var T, k;
+//
+//            if (this == null) {
+//                throw new TypeError(' this is null or not defined');
+//            }
+//
+//            // 1. Let O be the result of calling toObject() passing the
+//            // |this| value as the argument.
+//            var O = Object(this);
+//
+//            // 2. Let lenValue be the result of calling the Get() internal
+//            // method of O with the argument "length".
+//            // 3. Let len be toUint32(lenValue).
+//            var len = O.length >>> 0;
+//
+//            // 4. If isCallable(callback) is false, throw a TypeError exception.
+//            // See: http://es5.github.com/#x9.11
+//            if (typeof callback !== "function") {
+//                throw new TypeError(callback + ' is not a function');
+//            }
+//
+//            // 5. If thisArg was supplied, let T be thisArg; else let
+//            // T be undefined.
+//            if (arguments.length > 1) {
+//                T = thisArg;
+//            }
+//
+//            // 6. Let k be 0
+//            k = 0;
+//
+//            // 7. Repeat, while k < len
+//            while (k < len) {
+//
+//                var kValue;
+//
+//                // a. Let Pk be ToString(k).
+//                //    This is implicit for LHS operands of the in operator
+//                // b. Let kPresent be the result of calling the HasProperty
+//                //    internal method of O with argument Pk.
+//                //    This step can be combined with c
+//                // c. If kPresent is true, then
+//                if (k in O) {
+//
+//                    // i. Let kValue be the result of calling the Get internal
+//                    // method of O with argument Pk.
+//                    kValue = O[k];
+//
+//                    // ii. Call the Call internal method of callback with T as
+//                    // the this value and argument list containing kValue, k, and O.
+//                    callback.call(T, kValue, k, O);
+//                }
+//                // d. Increase k by 1.
+//                k++;
+//            }
+//            // 8. return undefined
+//        };
+//    }
+
+</script>
+</body>
+</html>
